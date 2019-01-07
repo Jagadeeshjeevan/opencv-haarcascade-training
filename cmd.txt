@@ -1,0 +1,7 @@
+opencv_createsamples -info info/info.txt -num 911 -w 50 -h 12 -vec positives.vec
+
+
+
+
+
+opencv_traincascade -data data -vec positives.vec -bg bg.txt -numPos 800 -numNeg 4000 -numStages 10 -w 50 -h 12
